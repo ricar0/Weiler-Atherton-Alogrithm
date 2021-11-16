@@ -37,7 +37,9 @@
 接下来结合图片解释一下
 
 ![在这里插入图片描述](https://img-blog.csdnimg.cn/40caac91a1cc41deb7e1bae01818d309.png?x-oss-process=image/watermark,type_ZHJvaWRzYW5zZmFsbGJhY2s,shadow_50,text_Q1NETiBAa2FrYTAwMTA=,size_18,color_FFFFFF,t_70,g_se,x_16)
+
 对于如下这个图，我们利用矩形裁剪凹多边形。
+
 首先从E点出发，判断E到J是否为出点，发现不是。遍历到J点，判断JF是否是出点，发现是，这时候改变遍历的对象，通过映射关系从K点开始。判断发现KC又是出点，因此再次改变遍历对象，遍历多边形到E，发现J已经被遍历过，这时直接绘制出JKE...
 
 # 程序框图
